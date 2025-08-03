@@ -2,11 +2,18 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox, simpledialog
 from PIL import Image, ImageTk
 from io import BytesIO
+import sys
 import os
 
 from arclet.alconna import TextFormatter
 from meme_generator.manager import get_memes, get_meme
 from meme_generator.exception import MemeGeneratorException, NoSuchMeme
+
+def resource_path(relative_path):
+    """ 获取打包后资源的绝对路径 """
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 class MemeGeneratorApp:
     def __init__(self, root):
@@ -244,7 +251,7 @@ class MemeGeneratorApp:
         # 尝试加载PNG或GIF格式的预览图
         image_path = None
         for ext in [".png", ".gif", ".jpeg"]:
-            path = f"images/{meme_key}{ext}"
+            path = resource_path(f"images/{meme_key}{ext}")
             if os.path.exists(path):
                 image_path = path
                 break

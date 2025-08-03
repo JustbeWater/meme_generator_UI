@@ -17,12 +17,12 @@ meme download
 以上命令在终端中运行，注意关闭类似 steam++（现名watt toolkit）的工具下载模板图片，否则可能出现 download failed （下载失败）问题。
 ## 使用方法
 + 方法一 打包整个文件下载后，运行 main.py  
-[打包文件地址（需要下载python和meme_generator库，以及模板图片）](https://github.com/JustbeWater/meme_generator_UI/archive/refs/heads/main.zip)
+[打包文件地址（需要下载python和meme_generator库，以及模板图片）](https://github.com/JustbeWater/meme_generator_UI/archive/refs/tags/v1.0.0.zip)
 + 方法二 克隆仓库后运行 main.py
 ```
 git clone https://github.com/JustbeWater/meme_generator_UI.git
 ```
 + 方法三 在 release 中下载对应的应用程序压缩包，解压后运行文件夹中的 Meme Genarator.exe 即可使用  
-[windows_x64_amd.zip(即开即用)]()
+[Meme_generator_window_x84_64.zip(即开即用)](https://github.com/JustbeWater/meme_generator_UI/releases/download/v1.0.0/Meme_generator_window_x84_64.zip)
 ## 官方地址
 + [meme-generator 项目地址](https://github.com/MemeCrafters/meme-generator)
